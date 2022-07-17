@@ -47,10 +47,21 @@ html, body {
     }
 }
 
-.loader {
+.loader-container {
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+
+.loader-primary {
     width: 250px;
     height: 250px;
     background: transparent;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 
     border-radius: 50%;
     border: 0.25em solid #4dabf5;
@@ -60,4 +71,32 @@ html, body {
     animation-timing-function: linear;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
+}
+
+.loader-secondary {
+    width: 200px;
+    height: 200px;
+    background: transparent;
+
+    border-radius: 50%;
+    border: 0.25em solid #33eb91;
+    border-bottom-color: transparent;
+    animation-name: loader7-mono-secondary;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+.loader-secondary-container {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
