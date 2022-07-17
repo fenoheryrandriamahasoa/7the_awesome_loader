@@ -10,6 +10,7 @@ html, body {
     background-color: #132b41;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -66,6 +67,9 @@ html, body {
     border-radius: 50%;
     border: 0.25em solid #4dabf5;
     border-bottom-color: transparent;
+}
+
+.loader-primary.mono{
     animation-name: loader7-mono-primary;
     animation-duration: 1.5s;
     animation-timing-function: linear;
@@ -81,6 +85,9 @@ html, body {
     border-radius: 50%;
     border: 0.25em solid #33eb91;
     border-bottom-color: transparent;
+}
+
+.loader-secondary.mono{
     animation-name: loader7-mono-secondary;
     animation-duration: 1.5s;
     animation-timing-function: linear;
@@ -99,4 +106,24 @@ html, body {
     top: 0;
     left: 0;
     z-index: 2;
+}
+
+.loader-primary.ease {
+    border-left-color: transparent;
+    animation-name: loader7-mono-primary;
+    animation-duration: 1.5s;
+    /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+.loader-secondary.ease {
+    border-right-color: transparent;
+    animation-name: loader7-mono-secondary;
+    animation-duration: 1.5s;
+    /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
 }
