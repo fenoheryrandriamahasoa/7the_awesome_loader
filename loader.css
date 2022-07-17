@@ -109,6 +109,7 @@ html, body {
 }
 
 .loader-primary.ease {
+    border-left-color: transparent;
     animation-name: loader7-mono-primary;
     animation-duration: 1.5s;
     /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
@@ -118,6 +119,7 @@ html, body {
 }
 
 .loader-secondary.ease {
+    border-right-color: transparent;
     animation-name: loader7-mono-secondary;
     animation-duration: 1.5s;
     /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
