@@ -15,6 +15,7 @@ body {
   }
 
 .loader {
+  display: flex;
   border: 10px solid #f3f3f3;
   border-radius: 50%;
   border-top: 10px solid #777;
@@ -28,6 +29,30 @@ body {
   position: fixed;
 }
 
+.loader-child {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  /* background-color: rgb(40, 7, 160); */
+  border: 8px solid #f3f3f3;
+  border-left: 10px solid #777;
+  border-right: 10px solid #777;
+  -webkit-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
+  border-radius: 50%;
+  margin: auto;
+  z-index: 9999;
+}
+
+.point {
+  width: 5px;
+  height: 5px;
+  background-color: #f3f3f3;
+  border-radius: 50%;
+  margin: auto;
+  z-index: 9999;
+}
+
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); }
@@ -37,3 +62,9 @@ body {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 } 
+
+@keyframes rotate{
+  100% {
+    transform: rotate(-360deg);
+  }
+}
