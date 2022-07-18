@@ -1,0 +1,19 @@
+.option {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    width: 150px;
+}
+
+.option-group{
+    display: flex;
+}
+
+.ml-5 {
+    margin-left: 5px;
+}
+
+.option-name {
+    color: white;
+    font-size: 15px;
+}
